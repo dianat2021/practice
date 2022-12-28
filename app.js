@@ -1,4 +1,4 @@
-// 1. WRITE A FUNCTION THAT TAKES TWO NUMBERS AND RETURNS THE MAXIMUM OF THE TWO
+// 1. WRITE A FUNCTION THAT TAKES TWO NUMBERS AND RETURNS THE MAXIMUM OF THE TWO.
 // const max = (num1, num2) => {
 //   if (num1 > num2) return num1;
 //   else return num2;
