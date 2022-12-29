@@ -219,14 +219,14 @@
 //======================================================================================
 // 18. WRITE A FUNCTION CALLED ARRAYFROMRANGE, IT TAKES 2 PARAMETERS CALLED MIN AND MAX. THIS FUNCTION
 //SHOULD RETURN AN ARRAY BETWEEN THE MIN AN MAX NUMBER.
-// const arrayFromRange = (min,max)=>{
-//     let result = [];
-//     for (let i = min; i<= max; i++){
-//         result.push(i)
-//     }
-//     return result
-// }
-// console.log(arrayFromRange(-2,3))
+  const minMaxArray = (min,max)=>{
+    let range = [];
+    for(let i=min; i<=max;i++){
+      range.push(i)
+    }
+    return range
+  }
+  console.log(minMaxArray(10,20))
 //=======================================================================================
 // 19. WRITE A FUNCTION LIKE INCLUDES METHOD. THE FUNCTION SHOULD TAKE AN ARRAY AND A SEARCH ELEMENT.
 // IF WE HAD THE SERACH ELEMENT THE FUNCTION RETURNS TRUE, OTHERWISE FALSE.
