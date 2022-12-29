@@ -47,15 +47,14 @@
 // showNumbers(10)
 //======================================================================================
 // 6. WRITE A FUCTION THAT TAKES AN ARRAY AS INPUT AND RETURNS THE NUMBER OF TRUTHY ELEMENTS IN THE ARRAY.
-// const countTruthy = (input)=>{
-//     let counter = 0;
-//     for (let element of input){
-//         if(element)
-//         counter++
-//     }
-//     return counter
-// }
-// console.log(countTruthy([1,2,3,"",8,NaN]))
+  const countTruthy = (arr)=>{
+    let counter = 0;
+    for(let element of arr){
+      if(element) counter++
+    }
+    return counter
+  }
+  console.log(countTruthy([1,2,false,3,""]))
 //======================================================================================
 // 7. WRITE A FUNCTION THAT RECEIVES AN OBJECT AND DISPLAYS ALL THE PROPERTIES OF THE OBJECT THAT ARE STRING.
 // const movie = {
