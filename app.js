@@ -73,31 +73,33 @@
 //========================================================================================
 // 8. WRITE A FUNCTION THAT RECEIVES A NUMBER AND RETURNS THE SUM OF ALL THE MULTIPLES OF
 // 3 AND 5 UP TO THE NUMBER.
-  const sum = (num)=>{
-    let counter = 0;
-    for(let i=0;i<=num;i++){
-      if(i%3===0 || i%5===0) counter+=i
-    }
-    return counter
-  }
-  console.log(sum(10))
+  // const sum = (num)=>{
+  //   let counter = 0;
+  //   for(let i=0;i<=num;i++){
+  //     if(i%3===0 || i%5===0) counter+=i
+  //   }
+  //   return counter
+  // }
+  // console.log(sum(10))
 //=======================================================================================
 // 9. WRITE A FUNCTION THAT RECEIVES A STUDENT'S GRADES THROUGH AN ARRAY AND CALCULATES THE AVERAGE.
 // IF AVERAGE IS BETWEEN 1 TO 59 LOG "FAIL". 60 AND 69 SHOULD BE "D". 70 AND 79 SHOULD BE "C". 80 AND
 // 89 SHOULD BE "B". 90 AND 100 SHOULD BE "A"
-// const calculateGrades = (grades)=>{
-//     let sum = 0;
-//     for (let grade of grades){
-//         sum += grade;
-//     }
-//     let result = sum / grades.length;
-//     if(result < 60) return "Fail!"
-//     else if(result >= 60 && result <70) return "D"
-//     else if(result >= 70 && result <80) return "C"
-//     else if(result >= 80 && result <90) return "B"
-//     else if(result >= 90 && result <= 100) return "A"
-// }
-// console.log(calculateGrades([20,40,50]))
+  const calculateGrades = (grades)=>{
+    let sum = 0;
+    let average = 0
+    for(let grade of grades){
+      sum+=grade
+    }
+    average = sum / grades.length;
+    if(average>= 0 && average<=59) console.log("FAILED!")
+    else if(average<69) console.log("D!")
+    else if(average<79) console.log("C!")
+    else if(average<89) console.log("B!")
+    else if(average<=100) console.log("A!")
+    
+  }
+  calculateGrades([10,100,90])
 //=============================================================================================
 // 10. WRITE A FUNCTION THAT RECEIVES A NUMBER AS PARAMETER FOR ROWS  AND PRINTS STARTS. FOR EXAMPLE
 // IF WE GIVE IT 5, WE HAVE 5 ROWS OF STARTS, FIRST ROW 1 STAR, SECOND ROW 2 STAR AND SO ON...
