@@ -131,37 +131,36 @@
 //==============================================================================================
 // 12. CREATE AN ADDRESS OBJECT WITH 3 PROPERTIES AS STREET, CITY, ZIP CODE, AND A FUNCTION THAT RECEIVES THE
 // ADDRESS OBJECT AND DISPLAYS ALL THE PROPERTIES WITH THEIR VALUE.
-const address = {
-    street: "Bogstadveien",
-    city:"Oslo",
-    zipCode: "0366"
-}
-const showProperties = (obj)=>{
-  for (let key in obj){
-    console.log(key, obj[key] )
-  }
-}
-showProperties(address)
+// const address = {
+//     street: "Bogstadveien",
+//     city:"Oslo",
+//     zipCode: "0366"
+// }
+// const showProperties = (obj)=>{
+//   for (let key in obj){
+//     console.log(key, obj[key] )
+//   }
+// }
+// showProperties(address)
 //==============================================================================================
 // 13. CREATE THE ADDRESS OBJECT USED IN THE PREVIOUS EXAMPLE USING FACTORY AND CONSTRUCTOR FUNCTION.
-// FACTORY
-// function address (street,city,zipCode){
-//     return {
-//         street,
-//         city,
-//         zipCode
-//     }
-// }
-// const address1 = address("Bogstadveien","Oslo","0366")
-// console.log(address1)
-// // CONSTRUCTOR
-// function Address (street,city,zipCode){
-//     this.street=street;
-//     this.city=city;
-//     this.zipCode=zipCode;
-// }
-// const address2 = new Address ("Ulleval", "Oslo", 0850)
-// console.log(address2)
+//FACTORY
+function address(street, city, zipCode){
+  return{
+    street,
+    city,
+    zipCode
+  }
+}
+console.log(address("Ulleval","Oslo", 0850))
+//CONSTRUCTOR
+function AddressConstruct (street,city,zipCode){
+  this.street = street;
+  this.city = city;
+  this.zipCode = zipCode;
+}
+const address1 = new AddressConstruct("Bislett","Oslo",500)
+console.log(address1)
 //================================================================================================
 // 14. USE THE CONSTRUCTOR FUNCTION IN THE PREVIOUS ASSIGMENT AND CREATE TWO NEW ADDRESS INSTANCES.
 // WRITE A FUNCTION THAT RECEIVES THESE TWO ADDRESSES (OBJECTS) AND CHECKS IF THEY ARE EQUAL.ALSO,
