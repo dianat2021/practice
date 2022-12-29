@@ -85,36 +85,38 @@
 // 9. WRITE A FUNCTION THAT RECEIVES A STUDENT'S GRADES THROUGH AN ARRAY AND CALCULATES THE AVERAGE.
 // IF AVERAGE IS BETWEEN 1 TO 59 LOG "FAIL". 60 AND 69 SHOULD BE "D". 70 AND 79 SHOULD BE "C". 80 AND
 // 89 SHOULD BE "B". 90 AND 100 SHOULD BE "A"
-  const calculateGrades = (grades)=>{
-    let sum = 0;
-    let average = 0
-    for(let grade of grades){
-      sum+=grade
-    }
-    average = sum / grades.length;
-    if(average>= 0 && average<=59) console.log("FAILED!")
-    else if(average<69) console.log("D!")
-    else if(average<79) console.log("C!")
-    else if(average<89) console.log("B!")
-    else if(average<=100) console.log("A!")
+  // const calculateGrades = (grades)=>{
+  //   let sum = 0;
+  //   let average = 0
+  //   for(let grade of grades){
+  //     sum+=grade
+  //   }
+  //   average = sum / grades.length;
+  //   if(average>= 0 && average<=59) console.log("FAILED!")
+  //   else if(average<69) console.log("D!")
+  //   else if(average<79) console.log("C!")
+  //   else if(average<89) console.log("B!")
+  //   else if(average<=100) console.log("A!")
     
-  }
-  calculateGrades([10,100,90])
+  // }
+  // calculateGrades([10,100,90])
 //=============================================================================================
 // 10. WRITE A FUNCTION THAT RECEIVES A NUMBER AS PARAMETER FOR ROWS  AND PRINTS STARTS. FOR EXAMPLE
 // IF WE GIVE IT 5, WE HAVE 5 ROWS OF STARTS, FIRST ROW 1 STAR, SECOND ROW 2 STAR AND SO ON...
-// const printStarts = (rows)=>{
+const printStarts = (rows)=>{
 
-//     for(let i = 1; i <= rows; i++){
-//         let star = "";
-//         for(let j = 1; j <= i; j++){
-//             star += "*"
-//         }
-//         console.log(star)
-//     }
+  for(let i =1; i<=rows;i++){
+    let star = "";
+    for(j=1; j<=i;j++){
+      star+="*"
+     
+    }
+    console.log(star)
+  }
+  
+}
+printStarts(10)
 
-// }
-// printStarts(10)
 //=============================================================================================
 // 11. WRITE A FUNCTION THAT TAKES A NUMBER AS PARAMETER AND SHOWS ALL THE PRIME NUMBERS FROM 0 TO THAT NUMBER.
 // const showPrimes = (number)=>{
