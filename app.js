@@ -165,43 +165,43 @@
 // 14. USE THE CONSTRUCTOR FUNCTION IN THE PREVIOUS ASSIGMENT AND CREATE TWO NEW ADDRESS INSTANCES.
 // WRITE A FUNCTION THAT RECEIVES THESE TWO ADDRESSES (OBJECTS) AND CHECKS IF THEY ARE EQUAL.ALSO,
 // WRITE ANOTHER FUNCTION THAT CHECKS IF THEY (TWO ADDRESSES) ARE REFRENCING TO THE SAME OBJECT.
-function Address (street, city, zipCode){
-  this.Address= street;
-  this.city=city;
-  this.zipCode=zipCode
-}
-const address1 = new Address("a", "b", "c");
-const address2 = new Address("a", "b", "c");
+// function Address (street, city, zipCode){
+//   this.Address= street;
+//   this.city=city;
+//   this.zipCode=zipCode
+// }
+// const address1 = new Address("a", "b", "c");
+// const address2 = new Address("a", "b", "c");
 
-function areSame(obj1,obj2){
-  if(obj1 === obj2) return true
-  return false
-}
-function areEqual(obj1,obj2){
-  if(obj1.Address === obj2.Address &&
-    obj1.city === obj2.city &&
-    obj1.zipCode === obj2.zipCode)
-    return true
-    return false
-}
-console.log(areSame(address1,address2))
-console.log(areEqual(address1,address2))
+// function areSame(obj1,obj2){
+//   if(obj1 === obj2) return true
+//   return false
+// }
+// function areEqual(obj1,obj2){
+//   if(obj1.Address === obj2.Address &&
+//     obj1.city === obj2.city &&
+//     obj1.zipCode === obj2.zipCode)
+//     return true
+//     return false
+// }
+// console.log(areSame(address1,address2))
+// console.log(areEqual(address1,address2))
 
 //=======================================================================================
 // 15.CREATE A BLOGPOST OBJECT USING OBJECT LITERAL SYNTAX WITH THESE PROPERTIES: TITLE, BODY,
 //AUTHOR, VIEWS, COMMENTS AS AN ARRAY(AUTHOR, BODY),ISLIVE(TRUE/FALSE)
-// const blog = {
-//     title: "New Post",
-//     Body: "Check out the link",
-//     author: "Reza",
-//     views: 100,
-//     comments: [{
-//         author: "Crazy",
-//         body: "Said bullshit"
-//     }],
-//     isLive: true
+// const post = {
+//   title: "Post Title",
+//   body:"Message goes here",
+//   author: "Reza",
+//   views:0,
+//   comments: [
+//     {author:"Something",
+//   body: "Something else"}
+//   ],
+//   isLive: true
 // }
-// console.log(blog)
+// console.log(post)
 //========================================================================================
 // 16. CREATE THE BLOGPOST OBJECT IN THE LAST EXAMPLE USING CONSTRUCTOR FUNCTION. IMAGINE IT HASN'T BEEN
 //PUBLISHED YET.
