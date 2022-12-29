@@ -57,20 +57,19 @@
   console.log(countTruthy([1,2,false,3,""]))
 //======================================================================================
 // 7. WRITE A FUNCTION THAT RECEIVES AN OBJECT AND DISPLAYS ALL THE PROPERTIES OF THE OBJECT THAT ARE STRING.
-// const movie = {
-//     title: "a",
-//     releaseYear: 2018,
-//     rating:4.5,
-//     director:"b"
-// }
-// const showProperties = (obj)=>{
-//     for (let element in obj){
-//         if(typeof(obj[element]) === "string"){
-//             console.log(element, obj[element])
-//         }
-//     }
-// }
-// showProperties(movie)
+const movie = {
+    title: "a",
+    releaseYear: 2018,
+    rating:4.5,
+    director:"b"
+}
+ const showProperties = (obj)=>{
+  for(let key in obj){
+    if(typeof(obj[key]) === "string")
+    console.log(key, obj[key])
+  }
+ }
+ showProperties(movie)
 //========================================================================================
 // 8. WRITE A FUNCTION THAT RECEIVES A NUMBER AND RETURNS THE SUM OF ALL THE MULTIPLES OF
 // 3 AND 5 UP TO THE NUMBER.
@@ -403,36 +402,3 @@
 // }
 //===================================================================================================
 // 2.
-function Stopwatch (){
-  let startTime, endTime, running, duration = 0 ; 
-
-  Object.defineProperty(this, "duration", 
- { get: function(){
-    return duration; // this duration is the variable
-  }})
-}
-
-Stopwatch.prototype.start = function(){
-  if(running) throw new Error ("STOP WATCH HAS ALREADY STARTED!");
-  running = true;
-  startTime = new Date();
-}
-
-Stopwatch.prototype.stop = function(){
-  if(!running) throw new Error ("THE TIMER HAS ALREADY STOPPED!");
-  running = false;
-  endTime = new Date();
-
-  const seconds = (endTime.getTime() - startTime.getTime()) / 1000 ; // getTime gets the miliseconds
-  duration += seconds;
-}
-
-Stopwatch.prototype.reset = function(){
-  startTime = null;
-  endTime = null;
-  duration = null;
-  running = false;
-}
-
-console.log(Stopwatch.prototype)
-const test = new Stopwatch();
