@@ -118,30 +118,30 @@
 
 //=============================================================================================
 // 11. WRITE A FUNCTION THAT TAKES A NUMBER AS PARAMETER AND SHOWS ALL THE PRIME NUMBERS FROM 0 TO THAT NUMBER.
-  const showPrime = (number)=>{
-    for(let i=1; i<=number;i++){
-      let counter = 0;
-      for(let j=1;j<=i;j++){
-        if(i % j === 0) counter++
-      } 
-      if(counter ===2 ) console.log(i)
-    }
-  }
-  showPrime(20)
+  // const showPrime = (number)=>{
+  //   for(let i=1; i<=number;i++){
+  //     let counter = 0;
+  //     for(let j=1;j<=i;j++){
+  //       if(i % j === 0) counter++
+  //     } 
+  //     if(counter ===2 ) console.log(i)
+  //   }
+  // }
+  // showPrime(20)
 //==============================================================================================
 // 12. CREATE AN ADDRESS OBJECT WITH 3 PROPERTIES AS STREET, CITY, ZIP CODE, AND A FUNCTION THAT RECEIVES THE
 // ADDRESS OBJECT AND DISPLAYS ALL THE PROPERTIES WITH THEIR VALUE.
-// const address = {
-//     street: "Bogstadveien",
-//     city:"Oslo",
-//     zipCode: "0366"
-// }
-// function showAdress (obj){
-//     for (let key in obj){
-//         console.log(key, obj[key])
-//     }
-// }
-// showAdress(address)
+const address = {
+    street: "Bogstadveien",
+    city:"Oslo",
+    zipCode: "0366"
+}
+const showProperties = (obj)=>{
+  for (let key in obj){
+    console.log(key, obj[key] )
+  }
+}
+showProperties(address)
 //==============================================================================================
 // 13. CREATE THE ADDRESS OBJECT USED IN THE PREVIOUS EXAMPLE USING FACTORY AND CONSTRUCTOR FUNCTION.
 // FACTORY
