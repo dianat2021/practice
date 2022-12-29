@@ -47,40 +47,40 @@
 // showNumbers(10)
 //======================================================================================
 // 6. WRITE A FUCTION THAT TAKES AN ARRAY AS INPUT AND RETURNS THE NUMBER OF TRUTHY ELEMENTS IN THE ARRAY.
-  const countTruthy = (arr)=>{
-    let counter = 0;
-    for(let element of arr){
-      if(element) counter++
-    }
-    return counter
-  }
-  console.log(countTruthy([1,2,false,3,""]))
+  // const countTruthy = (arr)=>{
+  //   let counter = 0;
+  //   for(let element of arr){
+  //     if(element) counter++
+  //   }
+  //   return counter
+  // }
+  // console.log(countTruthy([1,2,false,3,""]))
 //======================================================================================
 // 7. WRITE A FUNCTION THAT RECEIVES AN OBJECT AND DISPLAYS ALL THE PROPERTIES OF THE OBJECT THAT ARE STRING.
-const movie = {
-    title: "a",
-    releaseYear: 2018,
-    rating:4.5,
-    director:"b"
-}
- const showProperties = (obj)=>{
-  for(let key in obj){
-    if(typeof(obj[key]) === "string")
-    console.log(key, obj[key])
-  }
- }
- showProperties(movie)
+// const movie = {
+//     title: "a",
+//     releaseYear: 2018,
+//     rating:4.5,
+//     director:"b"
+// }
+//  const showProperties = (obj)=>{
+//   for(let key in obj){
+//     if(typeof(obj[key]) === "string")
+//     console.log(key, obj[key])
+//   }
+//  }
+//  showProperties(movie)
 //========================================================================================
 // 8. WRITE A FUNCTION THAT RECEIVES A NUMBER AND RETURNS THE SUM OF ALL THE MULTIPLES OF
 // 3 AND 5 UP TO THE NUMBER.
-// const sum = (limit)=>{
-//     let result = 0;
-//     for (let i = 0; i <= limit; i++){
-//         if(i % 3 === 0 || i % 5 === 0) result += i
-//     }
-//     return result
-// }
-// console.log(sum(10))
+  const sum = (num)=>{
+    let counter = 0;
+    for(let i=0;i<=num;i++){
+      if(i%3===0 || i%5===0) counter+=i
+    }
+    return counter
+  }
+  console.log(sum(10))
 //=======================================================================================
 // 9. WRITE A FUNCTION THAT RECEIVES A STUDENT'S GRADES THROUGH AN ARRAY AND CALCULATES THE AVERAGE.
 // IF AVERAGE IS BETWEEN 1 TO 59 LOG "FAIL". 60 AND 69 SHOULD BE "D". 70 AND 79 SHOULD BE "C". 80 AND
