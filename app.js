@@ -103,33 +103,31 @@
 //=============================================================================================
 // 10. WRITE A FUNCTION THAT RECEIVES A NUMBER AS PARAMETER FOR ROWS  AND PRINTS STARTS. FOR EXAMPLE
 // IF WE GIVE IT 5, WE HAVE 5 ROWS OF STARTS, FIRST ROW 1 STAR, SECOND ROW 2 STAR AND SO ON...
-const printStarts = (rows)=>{
+// const printStarts = (rows)=>{
 
-  for(let i =1; i<=rows;i++){
-    let star = "";
-    for(j=1; j<=i;j++){
-      star+="*"
-     
-    }
-    console.log(star)
-  }
+//   for(let i =1; i<=rows;i++){
+//     let star = "";
+//     for(j=1; j<=i;j++){
+//       star+="*"  
+//     }
+//     console.log(star)
+//   }
   
-}
-printStarts(10)
+// }
+// printStarts(10)
 
 //=============================================================================================
 // 11. WRITE A FUNCTION THAT TAKES A NUMBER AS PARAMETER AND SHOWS ALL THE PRIME NUMBERS FROM 0 TO THAT NUMBER.
-// const showPrimes = (number)=>{
-//     for (i = 1; i<=number; i++){
-//         let counter = 0;
-//         for(j = 1; j <= i; j++){
-//             if(i % j === 0) counter++;
-//         }
-//         if(counter === 2) console.log(i)
-//     }
-
-// }
-// showPrimes(20)
+  const showPrime = (number)=>{
+    for(let i=1; i<=number;i++){
+      let counter = 0;
+      for(let j=1;j<=i;j++){
+        if(i % j === 0) counter++
+      } 
+      if(counter ===2 ) console.log(i)
+    }
+  }
+  showPrime(20)
 //==============================================================================================
 // 12. CREATE AN ADDRESS OBJECT WITH 3 PROPERTIES AS STREET, CITY, ZIP CODE, AND A FUNCTION THAT RECEIVES THE
 // ADDRESS OBJECT AND DISPLAYS ALL THE PROPERTIES WITH THEIR VALUE.
